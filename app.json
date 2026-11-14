@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Onyx Chess",
+    "slug": "onyx-chess",
+    "scheme": "onyxchess",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#0A0F15",
+    "splash": { "image": "./assets/splash-icon.png", "resizeMode": "contain", "backgroundColor": "#0A0F15" },
+    "plugins": [
+      "expo-router",
+      ["expo-splash-screen", { "image": "./assets/splash-icon.png", "imageWidth": 160, "backgroundColor": "#0A0F15" }],
+      "expo-font",
+      "expo-audio"
+    ],
+    "ios": { "supportsTablet": false, "bundleIdentifier": "com.onyxchess.app" },
+    "android": {
+      "package": "com.onyxchess.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0F15",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": { "favicon": "./assets/favicon.png", "bundler": "metro", "output": "single" },
+    "experiments": { "typedRoutes": false }
+  }
+}
